@@ -1,14 +1,13 @@
 #include "Tour.h"
 #include <iostream>
 
-Tour::Tour(int x, int y, bool white) : Piece(x, y , white){
-}
+Tour::Tour(int x, int y, bool white) : Piece(x, y , white){}
 
 void Tour::affiche() const{
     if(m_white){
-        std::cout << "T";
+        std::cout << "T ";
     }else{
-        std::cout << "t";
+        std::cout << "t ";
     }
 }
 

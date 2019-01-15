@@ -1,16 +1,14 @@
 #include "Reine.h"
 #include <iostream>
 
-Reine::Reine(int x, int y, bool white) : Piece(x,y,white){
-
-}
+Reine::Reine(int x, int y, bool white) : Piece(x,y,white){}
 
 void Reine::affiche() const {
     if(m_white){
-        std::cout << "Q";
+        std::cout << "Q ";
     }
     else {
-        std::cout << "q";
+        std::cout << "q ";
     }
 }
 

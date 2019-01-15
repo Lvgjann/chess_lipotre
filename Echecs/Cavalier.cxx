@@ -3,14 +3,13 @@
 #include "Echiquier.h"
 #include <iostream>
 
-Cavalier::Cavalier(int x, int y, bool white) : Piece(x, y , white){
-}
+Cavalier::Cavalier(int x, int y, bool white) : Piece(x, y , white){}
 
 void Cavalier::affiche() const{
     if(m_white){
-        std::cout << "C";
+        std::cout << "C ";
     }else{
-        std::cout << "c";
+        std::cout << "c ";
     }
 }
 

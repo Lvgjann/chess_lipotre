@@ -3,15 +3,14 @@
 #include "Echiquier.h"
 #include <iostream>
 
-Fou::Fou(int x, int y, bool white) : Piece(x, y , white){
-}
+Fou::Fou(int x, int y, bool white) : Piece(x, y , white){}
 
 void 
 Fou::affiche() const{
     if(m_white){
-        std::cout << "T";
+        std::cout << "F ";
     }else{
-        std::cout << "t";
+        std::cout << "f ";
     }
 }
 

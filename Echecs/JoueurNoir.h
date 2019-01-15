@@ -3,6 +3,9 @@
 
 #include "Joueur.h"
 
+#include <iostream>
+#include <memory>
+
 class JoueurNoir : public Joueur{
     public:
        JoueurNoir();

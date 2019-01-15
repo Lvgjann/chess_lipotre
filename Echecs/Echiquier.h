@@ -10,6 +10,7 @@
 #include "Piece.h"
 #include <array>
 #include <memory>
+#include <string>
 
 /**
  * Declaration d'une classe mod�lisant une piece de jeu d'echec.
@@ -23,7 +24,6 @@ private:
   /**
    * Les cases de l'echiquier
    */
-  //Piece* m_cases[ NB_CASES ];
   std::array<std::shared_ptr<Piece>, NB_CASES> m_cases;
   
 public:

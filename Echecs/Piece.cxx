@@ -8,6 +8,7 @@
 #include "Piece.h"
 #include "Echiquier.h"
 #include <iostream>
+#include <string>
 
 #include "Pion.h"
 #include "Tour.h"
@@ -18,23 +19,16 @@
 
 using namespace std;
 
-Piece::Piece() {
-  // ne fait rien => objet instancie mais non valide.
-  cout << "Une piece creee" <<endl;
-}
+Piece::Piece() {}
 
 Piece::Piece(int x, int y, bool white)
   : m_x(x), m_y(y), m_white(white) {
-  //init(x,y,white);
   m_x = x;
   m_y = y;
   m_white = white;
-  cout << "Une piece creee" <<endl;
 }
 
-Piece::~Piece() {
-  cout << "Une piece detruite " << m_y << endl;
-}
+Piece::~Piece() {}
 
 void Piece::init( int x, int y, bool white ) {
   m_x = x;

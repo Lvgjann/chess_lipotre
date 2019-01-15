@@ -3,15 +3,14 @@
 #include "Echiquier.h"
 #include <iostream>
 
-Pion::Pion(int x, int y, bool white) : Piece(x, y , white){
-}
+Pion::Pion(int x, int y, bool white) : Piece(x, y , white){}
 
 void 
 Pion::affiche() const{
     if(m_white){
-        std::cout << "P";
+        std::cout << "P ";
     }else{
-        std::cout << "p";
+        std::cout << "p ";
     }
 }
 

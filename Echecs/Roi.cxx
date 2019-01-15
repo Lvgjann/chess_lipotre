@@ -1,16 +1,14 @@
 #include "Roi.h"
 #include <iostream>
 
-Roi::Roi(int x, int y, bool white) : Piece(x,y,white){
-
-}
+Roi::Roi(int x, int y, bool white) : Piece(x,y,white){}
 
 void Roi::affiche() const {
     if(m_white){
-        std::cout << "R";
+        std::cout << "R ";
     }
     else {
-        std::cout << "r";
+        std::cout << "r ";
     }
 }
 
